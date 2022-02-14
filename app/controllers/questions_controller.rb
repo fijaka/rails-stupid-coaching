@@ -6,7 +6,7 @@ class QuestionsController < ApplicationController
     @question = params[:question]
     @answer = params[:answer]
     @answer = ''
-    if @question == 'I am going to work'
+    if @question.capitalize == 'I am going to work'
       @answer = 'Great!'
     elsif @question.include?('?')
       @answer = 'Silly question, get dressed and go to work!'
